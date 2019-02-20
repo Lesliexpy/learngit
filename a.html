@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>- Sweet alert</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="shortcut icon" href="favicon.ico">
+<link href="../hAdmin20161102/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+<link href="../hAdmin20161102/css/font-awesome.css?v=4.4.0" rel="stylesheet">
+<link href="../hAdmin20161102/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<link href="../hAdmin20161102/css/animate.css" rel="stylesheet">
+<link href="../hAdmin20161102/css/style.css?v=4.1.0" rel="stylesheet">
+<script src="../vue/vue.js"></script>
+
+<!-- 全局js -->
+<script src="../hAdmin20161102/js/jquery.min.js?v=2.1.4"></script>
+<script src="../hAdmin20161102/js/bootstrap.min.js?v=3.3.6"></script>
+
+<!-- 自定义js -->
+<script src="../hAdmin20161102/js/content.js?v=1.0.0"></script>
+
+<!-- Bootstrap table -->
+<script src="../hAdmin20161102/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="../hAdmin20161102/js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+<script src="../hAdmin20161102/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+
+<!-- Peity -->
+<script src="../hAdmin20161102/js/demo/bootstrap-table-demo.js"></script>
+</head>
+<body class="gray-bg">
+<button class="btn btn-primary" data-toggle="modal" data-target="#con-close-modal">发布活动</button>
+<div id="con-close-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog" id="fabu">
+        <div class="modal-content">
+            <form data-name="" role="form" id="yz_fb"  onsubmit="return false">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="road_title">发布活动</h4>
+                </div>
+                <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="field-3">活动类型</label>
+                            <div for="field-3">
+                                <select class="form-control" id="action" name="action">
+                                    <option value="1">路演</option>
+                                    <option value="2">比赛</option>
+                                    <option value="3">学习</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				</div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- /.modal -->
+<script>
+ $('#con-close-modal').modal('toogle');
+</script>
+</body>
+</html>
